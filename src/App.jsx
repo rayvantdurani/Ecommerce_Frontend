@@ -1,10 +1,16 @@
-import "./App.css";
+import { Outlet } from "react-router-dom";
+
+import React from "react";
+import Header from "./Components/Header.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
-    <>
-      <h1 className="bg-green-400">Hello Vite + React!</h1>
-    </>
+    <React.Fragment>
+      <Header />
+      <Outlet />
+      <Footer />
+    </React.Fragment>
   );
 }
 
